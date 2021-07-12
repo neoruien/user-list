@@ -45,6 +45,8 @@ function AddUser(props) {
     setError(null);
   };
 
+  // The <input> elements become uncontrolled components as their internal state, which refers to the value that is reflected in them, is not controlled by React. We are just using regular DOM API for setting the value of the input DOM node.
+
   return (
     <Wrapper>
       {error && (
